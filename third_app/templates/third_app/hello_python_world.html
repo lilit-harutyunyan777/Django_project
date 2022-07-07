@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Hello Python World</h1>
+
+    <p>My first paragraph.</p>
+    <h3>Hello Dear {{name}} {{surname}}</h3>
+    {% for user in users%}
+    {% if user.is_verified %}
+        {{user.name}}
+    {% else %}
+         <h3>Hello notverified {{name}} {{surname}}</h3>
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
